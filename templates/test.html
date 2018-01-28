@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block body %}
+ 
+<div class="block1">
+<h1 class="white">LET'S PREVENT COLON CANCER!</h1>
+
+<div class="big-container">
+<form action='/result' method='post'>
+
+<div class="description">
+<h1>Colon Cancer?</h1>
+<p>Excluding skin cancers, colon cancer is the third most common cancer diagnosed in both men and women in the United States. </p>
+<p>Eating a nutritious diet, getting enough exercise, and controlling body fat could
+prevent 45% of colorectal cancers, according to researchers. This means that
+adopting a healthy lifestyle can dramatically lower your risk of getting colorectal
+cancer.</p>
+</div>
+<div class="meal-container">
+<h1>For which meal should we suggest?</h1>
+<select class="meal" name="meal">
+<option value="breakfast">Breakfast</option>
+<option value="lunch">Lunch</option>
+<option value="dinner">Dinner</option>
+</select>
+</div>
+
+<!--<div class="allergy-container">
+<h2>What are you allergic to?</h2>
+<input type="checkbox" name="nothing"> Not allergic to anything<br>
+<input type="checkbox" name="peanut"> Peanut <br>
+<input type="checkbox" name="pollen"> Pollen <br>
+<input type="checkbox" name="egg"> Egg <br>
+</div>-->
+<input class="submit" type ='submit' value="submit">
+</form>
+</div>
+{% endblock %}
